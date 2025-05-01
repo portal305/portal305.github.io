@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BridgeMsg - Messaging Bridge App</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#FC5C7D" />
+</head>
+<body class="dark-mode">
+  <div class="container">
+    <div class="app-header">
+      <img src="BridgeMsg/1024.png" alt="BridgeMsg Icon" class="app-icon" onerror="this.src='https://via.placeholder.com/100?text=BridgeMsg'">
+      <div class="app-title">
+        <h1>BridgeMsg</h1>
+        <a href="https://play.google.com/store/apps/details?id=com.roberto.bridgemsg" target="_blank" class="back-btn play-store-btn">
+          <i class="fab fa-google-play"></i> Play Store
+        </a>
+      </div>
+    </div>
+
+    <div class="language-toggle">
+      <button class="language-btn active" onclick="toggleLanguage('en')">English</button>
+      <button class="language-btn" onclick="toggleLanguage('it')">Italiano</button>
+    </div>
+
+    <div class="screenshots">
+        <img src="BridgeMsg/1.png" alt="" srcset="">
+        <img src="BridgeMsg/2.png" alt="" srcset="">
+        <img src="BridgeMsg/3.png" alt="" srcset="">
+    </div>
+
+    <div id="description-en" class="description">
+      <h2>BridgeMsg - Messaging Bridge</h2>
+      <p>BridgeMsg simplifies your messaging experience by providing a unified interface to send messages across multiple messaging platforms. No more switching between apps to reach your contacts!</p>
+      
+      <h3>Key Features:</h3>
+      <ul class="feature-list">
+        <li>Multi-platform support: Send messages directly to WhatsApp, Telegram, and Signal from a single app</li>
+        <li>Username support: Contact Telegram and Signal users via username or phone number</li>
+        <li>Recent contacts: Quickly access frequently messaged contacts</li>
+        <li>Search functionality: Easily find contacts in your history</li>
+      </ul>
+      
+      <h3>How It Works:</h3>
+      <p>BridgeMsg acts as a bridge between you and your favorite messaging platforms. Simply select the desired platform, enter a phone number or username, type your message, and send! BridgeMsg will open the appropriate app with your message ready to send.</p>
+      
+      <h3>Privacy-Focused:</h3>
+      <p>BridgeMsg doesn't store your messages on any server. It simply helps you navigate between different messaging apps on your device. Your conversations remain private and secure in their native apps.</p>
+    </div>
+
+    <div id="description-it" class="description hidden">
+      <h2>BridgeMsg - Ponte di Messaggistica</h2>
+      <p>BridgeMsg semplifica la tua esperienza di messaggistica fornendo un'interfaccia unificata per inviare messaggi su più piattaforme di messaggistica. Non dovrai più passare da un'app all'altra per raggiungere i tuoi contatti!</p>
+      
+      <h3>Caratteristiche principali:</h3>
+      <ul class="feature-list">
+        <li>Supporto multipiattaforma: invia messaggi direttamente a WhatsApp, Telegram e Signal da un'unica app</li>
+        <li>Supporto per nome utente: contatta gli utenti di Telegram e Signal tramite nome utente o numero di telefono</li>
+        <li>Contatti recenti: accedi rapidamente ai contatti a cui vengono inviati messaggi di frequente</li>
+        <li>Funzionalità di ricerca: trova facilmente i contatti nella tua cronologia</li>
+      </ul>
+      
+      <h3>Come funziona:</h3>
+      <p>BridgeMsg funge da ponte tra te e le tue piattaforme di messaggistica preferite. Seleziona semplicemente la piattaforma desiderata, inserisci un numero di telefono o un nome utente, digita il messaggio e invia! BridgeMsg aprirà l'app appropriata con il tuo messaggio pronto per l'invio.</p>
+      
+      <h3>Incentrato sulla privacy:</h3>
+      <p>BridgeMsg non memorizza i tuoi messaggi su nessun server. Ti aiuta semplicemente a navigare tra le diverse app di messaggistica sul tuo dispositivo. Le tue conversazioni rimangono private e sicure nelle loro app native.</p>
+    </div>
+
+    <a href="../index.html" class="back-btn">
+      <i class="fa-solid fa-arrow-left"></i> Back to Home
+    </a>
+  </div>
+
+  <script>
+    function toggleLanguage(lang) {
+      const enDesc = document.getElementById('description-en');
+      const itDesc = document.getElementById('description-it');
+      const buttons = document.querySelectorAll('.language-btn');
+      
+      buttons.forEach(btn => btn.classList.remove('active'));
+      
+      if (lang === 'en') {
+        enDesc.classList.remove('hidden');
+        itDesc.classList.add('hidden');
+        buttons[0].classList.add('active');
+      } else {
+        enDesc.classList.add('hidden');
+        itDesc.classList.remove('hidden');
+        buttons[1].classList.add('active');
+      }
+    }
+
+    // Add theme toggle support
+    function loadTheme() {
+      const darkMode = getCookie("darkMode");
+      const body = document.body;
+      
+      if (darkMode === "1") {
+        body.classList.add("dark-mode");
+      } else if (darkMode === "0") {
+        body.classList.remove("dark-mode");
+      }
+    }
+
+    function getCookie(name) {
+      const value = `; ${document.cookie}`;
+      const parts = value.split(`; ${name}=`);
+      if (parts.length === 2) return parts.pop().split(';').shift();
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      loadTheme();
+      
+      // This would dynamically load screenshots if they exist
+      const screenshotsDiv = document.querySelector('.screenshots');
+      // Note: Since the folder is empty, we're showing the placeholder message
+    });
+  </script>
+</body>
+</html>
