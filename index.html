@@ -29,24 +29,22 @@
   <div class="featured">
     <h3><i class="fa-solid fa-briefcase"></i> My projects</h3>
     <div class="carousel-container">
-
-      <div class="carousel-panel">
-        <div class="featured-item">
-          <div style="display: flex; flex-direction: column; align-items: center; padding: 10px;">
-            <img src="apps/BridgeMsg/1024.png" alt="BridgeMsg Icon" style="width: 80px; height: 80px; border-radius: 15px; margin-bottom: 10px;" onerror="this.src='https://via.placeholder.com/80?text=BridgeMsg'">
-            <h4 style="margin: 5px 0;">BridgeMsg</h4>
-            <a href="https://play.google.com/store/apps/details?id=com.roberto.bridgemsg" target="_blank" style="display: inline-block; background-color: #689f38; color: white; padding: 5px 15px; border-radius: 5px; text-decoration: none; margin-top: 5px;">
-              <i class="fab fa-google-play"></i> Play Store
-            </a>
-            <a href="apps/bridgemsg.html" style="display: inline-block; background-color: #6A82FB; color: white; padding: 5px 15px; border-radius: 5px; text-decoration: none; margin-top: 5px;">
-              <i class="fa-solid fa-circle-info"></i> More Info
-            </a>
+      <div class="carousel-inner">
+        <button class="carousel-arrow carousel-left-arrow"><i class="fa-solid fa-arrow-left"></i></button>
+        <div class="carousel-panel">
+          <div class="featured-item">
+            <div style="display: flex; flex-direction: column; align-items: center; padding: 10px;">
+              <img src="apps/BridgeMsg/1024.png" alt="BridgeMsg Icon" style="width: 80px; height: 80px; border-radius: 15px; margin-bottom: 10px;" onerror="this.src='https://via.placeholder.com/80?text=BridgeMsg'">
+              <h4 style="margin: 5px 0;">BridgeMsg</h4>
+              <a href="https://play.google.com/store/apps/details?id=com.roberto.bridgemsg" target="_blank" style="display: inline-block; background-color: #689f38; color: white; padding: 5px 15px; border-radius: 5px; text-decoration: none; margin-top: 5px;">
+                <i class="fab fa-google-play"></i> Play Store
+              </a>
+              <a href="apps/bridgemsg.html" style="display: inline-block; background-color: #6A82FB; color: white; padding: 5px 15px; border-radius: 5px; text-decoration: none; margin-top: 5px;">
+                <i class="fa-solid fa-circle-info"></i> More Info
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-      
-      <div class="carousel-arrows">
-        <button class="carousel-arrow carousel-left-arrow"><i class="fa-solid fa-arrow-left"></i></button>
         <button class="carousel-arrow carousel-right-arrow"><i class="fa-solid fa-arrow-right"></i></button>
       </div>
     </div>
@@ -66,7 +64,7 @@
   document.addEventListener('DOMContentLoaded', function() {
     var leftArrow = document.querySelector('.carousel-left-arrow');
     var rightArrow = document.querySelector('.carousel-right-arrow');
-    
+
     var carousel = new Carousel({
       panels: document.getElementsByClassName('carousel-panel'),
       panelActiveClass: 'carousel-panel-active',
@@ -76,8 +74,7 @@
       lazyLoadAttr: 'data-lazy-src',
       assetLoadingClass: 'image-loading'
     });
-    
-    // Initialize to first panel
+
     carousel.goTo(0);
   });
 </script>
