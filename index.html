@@ -1,35 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>App Portfolio - Roberto La Spina</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-notify@1.0.4/dist/simple-notify.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-notify@1.0.4/dist/simple-notify.css"/>
   <script src="https://cdn.jsdelivr.net/npm/simple-notify@1.0.4/dist/simple-notify.min.js"></script>
-  <meta name="theme-color" content="#FC5C7D">
+  <meta name="theme-color" content="#FC5C7D"/>
 </head>
 <body class="dark-mode">
   <header>
     <div class="profile-container">
-      <img class="profile-img" src="https://avatars.githubusercontent.com/u/38288940?v=4" alt="Profile" height="150" width="150">
+      <img class="profile-img" src="https://avatars.githubusercontent.com/u/38288940?v=4" alt="Profile" height="150" width="150" />
       <div class="info">
         <h1>Roberto La Spina</h1>
-        <h2><span id="typing"></span> <i class="fas fa-code"></i></h2>
+        <h2>
+          <span id="typing"></span>
+          <img src="https://img.icons8.com/color/24/source-code.png" alt="Code Icon" />
+        </h2>
       </div>
     </div>
-    
+
     <div class="social-links">
-      <a href="https://www.instagram.com/httprob" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-      <a href="https://github.com/portal305" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://www.instagram.com/httprob" target="_blank">
+        <img src="https://img.icons8.com/color/24/instagram-new--v1.png" alt="Instagram Icon" /> Instagram
+      </a>
+      <a href="https://github.com/portal305" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/24/000000/github.png" alt="GitHub Icon" /> GitHub
+      </a>
     </div>
   </header>
 
   <main>
     <section class="intro">
-      <h2><i class="fa-solid fa-briefcase"></i> My projects</h2>
+      <h2>
+        <img src="https://img.icons8.com/color/24/briefcase.png" alt="Projects Icon" /> My projects
+      </h2>
       <p>Welcome to my portfolio of Flutter applications. Each app is designed with a focus on user experience and performance.</p>
     </section>
 
@@ -37,27 +45,26 @@
       <!-- BridgeMsg App Card -->
       <div class="app-card">
         <div class="app-icon">
-          <img src="apps/BridgeMsg/1024.png" alt="BridgeMsg Icon" onerror="this.src='https://via.placeholder.com/100?text=BridgeMsg'">
+          <img src="apps/BridgeMsg/1024.png" alt="BridgeMsg Icon" onerror="this.src='https://via.placeholder.com/100?text=BridgeMsg'" />
         </div>
         <div class="app-info">
           <h3>BridgeMsg</h3>
           <p>A unified messaging platform that connects multiple messaging services.</p>
           <div class="app-actions">
             <a href="https://play.google.com/store/apps/details?id=com.roberto.bridgemsg" target="_blank" class="btn btn-primary">
-              <i class="fab fa-google-play"></i> Play Store
+              <img src="https://img.icons8.com/color/24/google-play.png" alt="Google Play Icon" /> Play Store
             </a>
             <a href="apps/bridgemsg.html" class="btn btn-secondary">
-              <i class="fa-solid fa-circle-info"></i> Details
+              <img src="https://img.icons8.com/color/24/info--v1.png" alt="Details Icon" /> Details
             </a>
           </div>
         </div>
       </div>
 
-      <!-- Add more app cards here as you develop more Flutter apps -->
-      <!-- Example of another app card (placeholder) -->
+      <!-- Coming Soon App Card -->
       <div class="app-card coming-soon">
         <div class="app-icon">
-          <i class="fas fa-rocket"></i>
+          <img src="https://img.icons8.com/color/48/rocket--v1.png" alt="Rocket Icon" />
         </div>
         <div class="app-info">
           <h3>Coming Soon</h3>
@@ -69,8 +76,12 @@
 
   <footer>
     <div class="settings">
-      <a onclick="toggle()"><i class="fa-solid fa-moon" id="theme-icon"></i></a>
-      <a id="share" onclick="share()"><i class="fa-solid fa-share"></i></a>
+      <a onclick="toggle()">
+        <img src="https://img.icons8.com/color/24/crescent-moon.png" id="theme-icon" alt="Dark Mode" />
+      </a>
+      <a id="share" onclick="share()">
+        <img src="https://img.icons8.com/color/24/share.png" alt="Share Icon" />
+      </a>
     </div>
   </footer>
 
