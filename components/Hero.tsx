@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
   }, [roles.length]);
 
   return (
-    <section className="relative pt-32 pb-24 lg:pt-56 lg:pb-40 overflow-hidden bg-black">
+    <section className="relative min-h-screen flex flex-col justify-center overflow-hidden bg-black">
       {/* Background Orbs */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10 pointer-events-none">
         <div className="absolute top-[-20%] left-[-10%] w-[60%] h-[60%] bg-emerald-900/10 rounded-full blur-[120px]"></div>
