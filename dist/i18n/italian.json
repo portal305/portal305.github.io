@@ -1,0 +1,48 @@
+
+{
+  "nav": {
+    "about": "Esperienza",
+    "projects": "Progetti"
+  },
+  "hero": {
+    "greeting": "Sono",
+    "description": "",
+    "roles": [
+      "Ingegnere del Software",
+      "Specialista Flutter",
+      "Problem Solver",
+      "Sviluppatore Cross-Platform",
+      "Appassionato di UI/UX"
+    ]
+  },
+  "about": {
+    "title": "Eccellenza Ingegneristica",
+    "content": "Ingegnere del software specializzato nello sviluppo cross-platform ad alte prestazioni. Mi dedico alla creazione di strumenti sofisticati come 'Ember' che spingono i confini di ciò che è possibile con Flutter, offrendo esperienze utente rifinite e intuitive.",
+    "skills": [
+      "Flutter",
+      "Dart",
+      "C# / .NET",
+      "WPF",
+      "Architettura Software"
+    ],
+    "bio": {
+      "personal": "🧑‍🦰 Mi chiamo Roberto, ho 21 anni.",
+      "location": "📍 Italia, Palermo",
+      "languagesTitle": "💻 Linguaggi",
+      "languages": ["HTML", "CSS", "JavaScript", "Kotlin", "Dart", "Flutter", "Python", "GitHub", "Visual Studio Code", "Markdown"],
+      "interestsTitle": "🕹️ Passione RetroGaming",
+      "interests": ["GB", "GBA", "GBC", "NDS", "3DS", "PSP", "PS1", "Altro"],
+      "status": "💼 Sono attualmente alla ricerca di nuove opportunità lavorative",
+      "cta": ""
+    }
+  },
+  "projects": {
+    "title": "Progetti in Evidenza",
+    "active": "Attivo",
+    "privacyFirst": "Privacy in Primo Piano",
+    "close": "Chiudi"
+  },
+  "footer": {
+    "builtWith": ""
+  }
+}
