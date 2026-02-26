@@ -161,6 +161,19 @@ const Projects: React.FC = () => {
                         </svg>
                       </a>
                     )}
+                    {project.playStore && (
+                      <a 
+                        href={project.playStore} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="p-2 bg-emerald-500 text-black rounded-lg hover:scale-110 transition-transform shadow-lg shadow-emerald-500/20"
+                        title="Play Store"
+                      >
+                        <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198l2.807 1.626a1 1 0 010 1.73l-2.808 1.626L15.206 12l2.492-2.491zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/>
+                        </svg>
+                      </a>
+                    )}
                     {project.github && (
                       <a 
                         href={project.github} 
@@ -232,6 +245,14 @@ const Projects: React.FC = () => {
                     {selectedProject.link && (
                       <a href={selectedProject.link} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 px-8 py-4 bg-emerald-500 text-black font-black uppercase text-sm tracking-widest rounded-2xl hover:scale-105 transition-all shadow-[0_10px_40px_-10px_rgba(16,185,129,0.5)]">
                         Visit Link
+                      </a>
+                    )}
+                    {selectedProject.playStore && (
+                      <a href={selectedProject.playStore} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 px-8 py-4 bg-emerald-500 text-black font-black uppercase text-sm tracking-widest rounded-2xl hover:scale-105 transition-all shadow-[0_10px_40px_-10px_rgba(16,185,129,0.5)]">
+                        <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198l2.807 1.626a1 1 0 010 1.73l-2.808 1.626L15.206 12l2.492-2.491zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/>
+                        </svg>
+                        Play Store
                       </a>
                     )}
                     {selectedProject.github && (

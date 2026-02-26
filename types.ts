@@ -11,6 +11,7 @@ export interface Project {
   imageUrl: string;
   iconBgColor?: string;
   link?: string;
+  playStore?: string;
   github?: string;
   features?: string[];
   screenshots?: string[];
