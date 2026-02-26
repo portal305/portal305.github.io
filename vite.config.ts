@@ -16,7 +16,8 @@ export default defineConfig(({ mode }) => {
       viteStaticCopy({
         targets: [
           { src: 'i18n', dest: '.' },
-          { src: 'projects', dest: '.' }
+          { src: 'projects', dest: '.' },
+          { src: 'app-ads.txt', dest: '.' }
         ]
       })
     ],
