@@ -1,5 +1,27 @@
-
 [
+  {
+    "id": "mojo-wellness",
+    "title": "Mojo Wellness",
+    "description": {
+      "en": "Your personal wellness companion for mindfulness, meditation, and healthy habits.",
+      "it": "Il tuo compagno personale per il benessere, mindfulness, meditazione e abitudini sane."
+    },
+    "technologies": [
+      "Flutter",
+      "Dart"
+    ],
+    "tags": [
+      "Mobile"
+    ],
+    "imageUrl": "https://play-lh.googleusercontent.com/dHKQ9g2eZEePm59p925Y97dlJusXXr6RATAD2_BTyYa54TxSuPTyaodcKpcBU4TD3vqO167nHHdNe-TnSitQ=w240-h480",
+    "iconBgColor": "#10b981",
+    "playStore": "https://play.google.com/store/apps/details?id=com.portal305.mojo&hl=it",
+    "screenshots": [],
+    "fullDescription": {
+      "en": "Mojo Wellness is your personal wellness companion designed to help you build healthy habits and find inner peace.",
+      "it": "Mojo Wellness è il tuo compagno personale per il benessere progettato per aiutarti a costruire abitudini sane e trovare la pace interiore."
+    }
+  },
   {
     "id": "ember",
     "title": "Ember Frontend",
@@ -7,8 +29,13 @@
       "en": "A modern, feature-rich frontend emulator launcher for retro gaming collections built with Flutter.",
       "it": "Un launcher per emulatori moderno e ricco di funzionalità per collezioni di retro gaming realizzato con Flutter."
     },
-    "technologies": ["Flutter", "Dart"],
-    "tags": ["Mobile"],
+    "technologies": [
+      "Flutter",
+      "Dart"
+    ],
+    "tags": [
+      "Mobile"
+    ],
     "imageUrl": "https://raw.githubusercontent.com/portal305/frontend/main/icon.png",
     "iconBgColor": "#7c3aed",
     "github": "https://github.com/portal305/frontend/releases/",
